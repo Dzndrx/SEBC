@@ -103,3 +103,16 @@ Address: 172.31.10.60
 ```
 
 # nscd
+```
+[root@ip-172-31-10-250 named]# service nscd status
+shell-init: error retrieving current directory: getcwd: cannot access parent dir                                                                                        ectories: No such file or directory
+chdir: error retrieving current directory: getcwd: cannot access parent director                                                                                        ies: No such file or directory
+Redirecting to /bin/systemctl status nscd.service
+● nscd.service - Name Service Cache Daemon
+   Loaded: loaded (/usr/lib/systemd/system/nscd.service; enabled; vendor preset:                                                                                         disabled)
+   Active: active (running) since Mon 2018-05-14 17:13:12 UTC; 44s ago
+ Main PID: 4183 (nscd)
+   CGroup: /system.slice/nscd.service
+           └─4183 /usr/sbin/nscd
+
+```
