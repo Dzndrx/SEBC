@@ -1,0 +1,13 @@
+[centos@ip-172-31-6-237 cloudera-scm-server]$ -l
+-bash: -l: command not found
+[centos@ip-172-31-6-237 cloudera-scm-server]$ service cloudera-scm-server status -status -l
+● cloudera-scm-server.service - LSB: Cloudera SCM Server
+   Loaded: loaded (/etc/rc.d/init.d/cloudera-scm-server; bad; vendor preset: disabled)
+   Active: active (exited) since Thu 2018-05-17 08:04:25 UTC; 47min ago
+     Docs: man:systemd-sysv-generator(8)
+
+May 17 08:04:20 ip-172-31-6-237.us-west-2.compute.internal systemd[1]: Starting LSB: Cloudera SCM Server...
+May 17 08:04:20 ip-172-31-6-237.us-west-2.compute.internal cloudera-scm-server[12121]: /etc/rc.d/init.d/cloudera-scm-server: line 109: pstree: command not found
+May 17 08:04:20 ip-172-31-6-237.us-west-2.compute.internal su[12145]: (to cloudera-scm) root on none
+May 17 08:04:25 ip-172-31-6-237.us-west-2.compute.internal cloudera-scm-server[12121]: Starting cloudera-scm-server: [  OK  ]
+May 17 08:04:25 ip-172-31-6-237.us-west-2.compute.internal systemd[1]: Started LSB: Cloudera SCM Server.
